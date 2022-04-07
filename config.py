@@ -25,9 +25,11 @@ class Config(object):
         
         if dataset_name=='volleyball':
             self.data_path = 'data/volleyball/videos' #data path for the volleyball dataset
-            self.train_seqs = [ 1,3,6,7,10,13,15,16,18,22,23,31,32,36,38,39,40,41,42,48,50,52,53,54,
-                                0,2,8,12,17,19,24,26,27,28,30,33,46,49,51]  #video id list of train set 
-            self.test_seqs = [4,5,9,11,14,20,21,25,29,34,35,37,43,44,45,47]  #video id list of test set
+            self.train_seqs = [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+            self.test_seqs = [ 8, 9 ]
+            #self.train_seqs = [ 1,3,6,7,10,13,15,16,18,22,23,31,32,36,38,39,40,41,42,48,50,52,53,54,
+            #                    0,2,8,12,17,19,24,26,27,28,30,33,46,49,51]  #video id list of train set 
+            #self.test_seqs = [4,5,9,11,14,20,21,25,29,34,35,37,43,44,45,47]  #video id list of test set
         else:
             self.data_path='data/collective'  #data path for the collective dataset
             self.test_seqs=[5,6,7,8,9,10,11,15,16,25,28,29]
