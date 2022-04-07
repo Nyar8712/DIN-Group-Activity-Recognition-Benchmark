@@ -9,7 +9,7 @@ RUN git clone https://github.com/longcw/RoIAlign.pytorch.git . && \
 
 # clone DIN_GAR repo
 WORKDIR /opt/DIN_GAR
-RUN git clone https://github.com/JacobYuan7/DIN_GAR.git .
+RUN git clone https://github.com/Nyar8712/DIN-Group-Activity-Recognition-Benchmark#main .
 RUN pip install \
       scikit-image \
       pillow==6.2.0 \
